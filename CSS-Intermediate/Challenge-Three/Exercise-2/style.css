@@ -1,39 +1,45 @@
-div {
-  border: 3px solid black;
-  box-sizing: border-box;
-}
-wrapper {
-  margin-top: 0px;
+.boxes {
+  border: solid 2px black;
+  min-height: 600px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 p {
-  border-bottom: 3px solid black;
+  border: solid black;
+  width: auto;
+  border-width: 2px 2px 0 2px;
+  margin-bottom: 0;
 }
 
-.col {
+.box--1 {
+  height: 80px;
+  width: 100%;
+  background-color: blueviolet;
   margin: 1%;
+  margin-top: 0;
+  margin-top: 1em;
 }
 
-.purple {
-  height: 100px;
-  background-color: #8a2be2;
-}
-
-.red {
+.box--2 {
+  height: 30em;
+  margin: 1%;
   background-color: red;
-  display: inline-block;
-  width: 30%;
-  height: 400px;
+  flex: 1;
 }
-.green {
+
+.box--3 {
+  height: 30em;
+  margin: 1%;
+  flex: 1;
   background-color: green;
-  display: inline-block;
-  width: 30%;
-  height: 400px;
 }
-.orange {
-  background-color: orange;
-  display: inline-block;
-  width: 30%;
-  height: 400px;
+
+.box--4 {
+  height: 30em;
+  margin: 1%;
+  flex: 1;
+  background-color: orangered;
 }
