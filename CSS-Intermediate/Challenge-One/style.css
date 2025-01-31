@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(54, 67, 113);
+}
+
+#wrap {
+  padding: 0 5vw 10vh 5vw;
+  margin: 0 auto;
+  display: flex;
+}
+
+#nav {
+  background-color: rgb(176, 207, 255);
+  min-width: 200px;
+}
+
+#content {
+  background-color: rgb(91, 127, 189);
+  text-align: center;
+  padding: 0px 25px;
+}
+
+#content ul {
+  text-align: left;
+  list-style-type: none;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}

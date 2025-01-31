@@ -1,0 +1,30 @@
+.boxes {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box--1 {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  border: 2px solid salmon;
+}
+
+.box--2 {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  border: 2px solid salmon;
+}
+
+.box--3 {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  border: 2px solid salmon;
+}

@@ -1,0 +1,39 @@
+div {
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+wrapper {
+  margin-top: 0px;
+}
+
+p {
+  border-bottom: 3px solid black;
+}
+
+.col {
+  margin: 1%;
+}
+
+.purple {
+  height: 100px;
+  background-color: #8a2be2;
+}
+
+.red {
+  background-color: red;
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+}
+.green {
+  background-color: green;
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+}
+.orange {
+  background-color: orange;
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+}

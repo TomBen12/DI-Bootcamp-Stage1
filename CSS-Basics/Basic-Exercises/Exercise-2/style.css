@@ -1,0 +1,17 @@
+.odd {
+  background-color: rgb(255, 200, 220);
+  font-family: "Courier New", Verdana, "DejaVu Sans", "sans-serif";
+}
+
+#second {
+  color: rgb(0, 0, 255);
+  font-size: 36px;
+}
+
+.cooler {
+  font-size: 24px;
+}
+
+#fourth {
+  background-color: rgba(0, 255, 0, 0.5);
+}

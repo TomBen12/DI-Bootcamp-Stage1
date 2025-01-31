@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(66, 190, 240);
+}
+
+#wrap {
+  margin: 10px auto;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 21px;
+}
