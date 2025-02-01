@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  /*having an extra font just in case */
+  font-family: "inter", Arial;
+}
+
+nav {
+  display: flex;
+  padding: 0.5em 0;
+  justify-content: space-between;
+  background-color: #333333af;
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e1dd;
+  border-radius: 7px;
+  padding: 0.5em;
+}
+.logo {
+  font-weight: bold;
+  margin-left: 1em;
+  padding-top: 0.5em;
+}
+nav > ul {
+  margin: 0; /* removing ul default margin so logo sits on same line */
+  margin-right: 1em;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  column-gap: 10px;
+}
+
+.nav__btn {
+  padding-top: 0.5em;
+}
+
+nav .nav__btn > a:hover {
+  color: #5c5c5c;
+  background-color: #e0e1dc;
+}
+
+/* background: url(./assets/Jordan-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
