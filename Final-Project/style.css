@@ -1,21 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  /*having an extra font just in case */
+  /* having an extra font just in case */
   font-family: "inter", Arial;
+  background-color: #000000;
+  color: #e0e1dc;
 }
 
 nav {
   display: flex;
-  padding: 0.5em 0;
+  padding: 0 0 0.5em 0;
   justify-content: space-between;
   background-color: #333333af;
   position: fixed; /* Set the navbar to fixed position */
   width: 100%; /* Full width */
+  top: 0;
+  z-index: 3;
 }
 
 nav a {
   text-decoration: none;
-  color: #e0e1dd;
+  color: #e0e1dc;
   border-radius: 7px;
   padding: 0.5em;
 }
@@ -23,9 +31,10 @@ nav a {
   font-weight: bold;
   margin-left: 1em;
   padding-top: 0.5em;
+  color: #e0e1dc;
 }
 nav > ul {
-  margin: 0; /* removing ul default margin so logo sits on same line */
+  margin: 0; /* removing ul default margin so logo sits on same line, remember default box sizing !!!*/
   margin-right: 1em;
   padding: 0;
   list-style-type: none;
@@ -38,10 +47,161 @@ nav > ul {
 }
 
 nav .nav__btn > a:hover {
-  color: #5c5c5c;
-  background-color: #e0e1dc;
+  color: #333333af;
+  background-color: #ff9e55;
 }
 
-/* background: url(./assets/Jordan-pic.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
+.section__intro {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #ff7755;
+}
+.quote__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6vw;
+  margin-bottom: auto;
+  margin-top: 15vh;
+}
+.quote {
+  margin: 0;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #e0e1dc;
+  justify-self: flex-start;
+}
+
+.quote__container p {
+  color: #ff7755;
+}
+/* used linear gradient to make the image fade ti black */
+.img--peterson {
+  min-height: fit-content;
+  max-height: max-content;
+  width: 100vh;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+#timeline,
+#media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#timeline > h2,
+#media > h2 {
+  margin-top: 50px;
+  border: 4px solid#ff9e55;
+  padding: 4px;
+  border-radius: 14px;
+}
+.main-container {
+  color: #000000;
+  position: relative;
+  width: 500px;
+}
+/*creating line for timeline*/
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: #ff9e55;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper {
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+.text-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: -10px;
+  background-color: #ff7755;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*for left events*/
+.left {
+  left: 0;
+}
+/*for right events*/
+.right {
+  left: 50%;
+}
+.right::after {
+  left: -10px;
+}
+/*content box colour padding  
+and radius for circular corner*/
+.content {
+  padding: 15px 15px 15px 17px;
+  background-color: #e0e1dc;
+  border-radius: 10px;
+}
+/*setting text property of event heading*/
+.content h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 1px;
+}
+/*setting text property of event content*/
+.content p {
+  color: #616161;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.books {
+  text-align: center;
+}
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 3px solid #ff9e55;
+}
+
+.book-container img {
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.book-container img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
